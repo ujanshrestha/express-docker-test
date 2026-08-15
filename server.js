@@ -43,7 +43,7 @@ app.get("/", async (req, res) => {
     const c = data.current;
 
     res.render("weather", {
-      location: "Chitwan, Nepal",
+      location: "Kathmandu, Nepal",
       temperature: c.temperature_2m,
       humidity: c.relative_humidity_2m,
       wind: c.wind_speed_10m,
