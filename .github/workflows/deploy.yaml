@@ -20,6 +20,6 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.SSH_KEY }}
           script: |
-            cd /root/express-docker
+            cd /home/ubuntu/express-docker-test
             git pull
             docker compose up -d --build
